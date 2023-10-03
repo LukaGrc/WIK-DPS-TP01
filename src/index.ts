@@ -2,7 +2,7 @@ import http from "http";
 
 /* On crée le seveur et on lui dit quoi faire selon le lien (ping -> affichage des headers / autre -> 404) */
 const myServer = http.createServer((req, res) => {
-    if (req.url == "/ping") {
+    if (req.url === "/ping" && req.method === "GET") {
         res.write(JSON.stringify(req.headers));
         res.end();
     } else {
