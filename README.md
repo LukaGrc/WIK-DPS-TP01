@@ -29,4 +29,4 @@ Pour lancer le projet, vous devez exécuter la commande suivante :
 npm start
 ```
 
-Vous pouvez maintenant vous rendre sur http://localhost:`le port que vous avez en variable d'environnement`/ping !
+Vous pouvez maintenant vous rendre sur `http://localhost:[le port que vous avez en variable d'environnement]/ping`!
