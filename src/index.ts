@@ -1,5 +1,11 @@
 import http from "http";
 
+/* On vérifie les variables d'environnement */
+if (!process.env.PING_LISTEN_PORT) {
+    console.error("PING_LISTEN_PORT is not defined");
+    process.exit(1);
+}
+
 /* On crée le seveur et on lui dit quoi faire selon le lien (ping -> affichage des headers / autre -> 404) */
 const myServer = http.createServer((req, res) => {
     if (req.url === "/ping" && req.method === "GET") {
