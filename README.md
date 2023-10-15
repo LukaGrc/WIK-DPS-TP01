@@ -1,5 +1,9 @@
 # MODULE - DevOps : WIK-DPS-TP01
 
+- [I - Prérequis](#i---prérequis)
+- [II - Installation & Dépendances](#ii---installation--dépendances)
+- [III - Lancement du projet](#iii---lancement-du-projet)
+
 ## I - Prérequis
 
 Pour lancer ce projet, vous devez avoir une variable d'environnement nommée `PING_LISTEN_PORT` qui doit contenir le port sur lequel écoutera notre app.
